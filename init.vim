@@ -62,10 +62,11 @@ nmap <leader>f  <Plug>(coc-format-selected)
 inoremap <expr> <c-j> ("\<C-n>")
 
 inoremap <expr> <c-k> ("\<C-p>")
-nmap <leader>1 :bfirst<CR>
-nmap <leader>2 :bfirst<CR>:bn<CR>
-nmap <leader>3 :bfirst<CR>:2bn<CR>
-nmap <leader>4 :bfirst<CR>:3bn<CR>
+nmap <Tab>1 :bfirst<CR>
+nmap <Tab>2 :bfirst<CR>:bn<CR>
+nmap <Tab>3 :bfirst<CR>:2bn<CR>
+nmap <Tab>4 :bfirst<CR>:3bn<CR>
+nmap <S-Tab> :bnext<CR>
 let g:NERDCreateDefaultMappings = 1
 nmap <S-Up> :-10
 nmap <S-Down> :+10
