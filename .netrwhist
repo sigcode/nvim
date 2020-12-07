@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/www-data/.config/nvim'
+let g:netrw_dirhist_0='/var/www/test'
+let g:netrw_dirhist_9='/var/www/test/core'
+let g:netrw_dirhist_8='/var/www/test'
+let g:netrw_dirhist_7='/var/www/test/core/application/init/Controller'
+let g:netrw_dirhist_6='/var/www/test/core/application/init'
+let g:netrw_dirhist_5='/var/www/test/core/application'
+let g:netrw_dirhist_4='/var/www/test/core'
+let g:netrw_dirhist_3='/var/www/test/core/controller'
+let g:netrw_dirhist_2='/var/www/test/core'
