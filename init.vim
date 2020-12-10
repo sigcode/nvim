@@ -60,7 +60,8 @@ autocmd FileType * let b:coc_suggest_disable = 1
 nmap <leader>f  <Plug>(coc-format-selected)
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
-
+let g:rooter_manual_only = 1
+let g:rooter_patterns = ['^core']
 inoremap <expr> <c-k> ("\<C-p>")
 nmap <Tab>1 :bfirst<CR>
 nmap <Tab>2 :bfirst<CR>:bn<CR>

@@ -16,6 +16,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
     Plug 'frazrepo/vim-rainbow'
     Plug 'airblade/vim-gitgutter'
+    Plug 'airblade/vim-rooter'
+
+
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'morhetz/gruvbox'
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
