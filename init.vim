@@ -63,6 +63,7 @@ inoremap <expr> <c-j> ("\<C-n>")
 let g:rooter_manual_only = 1
 let g:rooter_patterns = ['^core']
 inoremap <expr> <c-k> ("\<C-p>")
+let g:gutentags_project_root = ['Makefile']
 nmap <Tab>1 :bfirst<CR>
 nmap <Tab>2 :bfirst<CR>:bn<CR>
 nmap <Tab>3 :bfirst<CR>:2bn<CR>

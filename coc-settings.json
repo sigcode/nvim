@@ -1,8 +1,8 @@
 {
-    "suggest.autoTrigger": "none",
-    "suggest.timeout": 1,
-    "diagnostic.enable": false,
-    "clangd.semanticHighlighting": true,
+ //   "suggest.autoTrigger": "none",
+  //  "suggest.timeout": 1,
+  //  "diagnostic.enable": false,
+  //xp  "clangd.semanticHighlighting": true,
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,

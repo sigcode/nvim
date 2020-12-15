@@ -17,11 +17,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'frazrepo/vim-rainbow'
     Plug 'airblade/vim-gitgutter'
     Plug 'airblade/vim-rooter'
-
-
+    Plug 'seb-h-k/phpcomplete.vim'
+    Plug 'ludovicchabant/vim-gutentags'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'morhetz/gruvbox'
-    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+"   Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 "    Plug 'liuchengxu/vim-which-key'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -31,6 +31,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-commentary'
     Plug 'mhinz/vim-startify'
     Plug 'vim-airline/vim-airline'
-    Plug 'shawncplus/phpcomplete.vim'
+ ""   Plug 'shawncplus/phpcomplete.vim'
     Plug 'vim-airline/vim-airline-themes'
 call plug#end()
