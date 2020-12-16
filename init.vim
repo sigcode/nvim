@@ -52,7 +52,7 @@ set filetype=blade.php
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
 
-colorscheme gruvbox
+colorscheme tender
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 vmap <leader>f  <Plug>(coc-format-selected)

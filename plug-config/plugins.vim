@@ -11,13 +11,18 @@ call plug#begin('~/.vim/plugged')
 "
 " " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
     Plug 'junegunn/vim-easy-align'
+    Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
+Plug 'jacoborus/tender.vim'
 " Include Phpactor
     Plug 'preservim/nerdcommenter'
     Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
     Plug 'frazrepo/vim-rainbow'
     Plug 'airblade/vim-gitgutter'
     Plug 'airblade/vim-rooter'
-    Plug 'seb-h-k/phpcomplete.vim'
+    "Plug 'seb-h-k/phpcomplete.vim'
     Plug 'ludovicchabant/vim-gutentags'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'morhetz/gruvbox'
