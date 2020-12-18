@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'jacoborus/tender.vim'
+Plug 'nightsense/carbonized'
 " Include Phpactor
     Plug 'preservim/nerdcommenter'
     Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
