@@ -54,10 +54,10 @@ set filetype=blade.php
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
 
 colorscheme gruvbox
-
+imap ii <ESC>
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 vmap <leader>f  <Plug>(coc-format-selected)
-autocmd FileType * let b:coc_suggest_disable = 1
+"autocmd FileType * let b:coc_suggest_disable = 1
 nmap <leader>f  <Plug>(coc-format-selected)
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
