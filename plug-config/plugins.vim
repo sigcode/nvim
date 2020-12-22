@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
 " " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
     Plug 'junegunn/vim-easy-align'
     Plug 'mhinz/vim-signify'
+    Plug 'jwalton512/vim-blade'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'

@@ -6,6 +6,8 @@ nmap <space>t :CocCommand coc-terminal-toggle<CR>
 nmap <space>r :RG <CR>
 nmap <space>p :Files <CR>
 nmap <space>f :BLines <CR>
+
+nmap <space>x :bd <CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 set hidden
 set nobackup

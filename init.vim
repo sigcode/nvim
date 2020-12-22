@@ -55,7 +55,7 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
 
 colorscheme gruvbox
 imap ii <ESC>
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+"autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 vmap <leader>f  <Plug>(coc-format-selected)
 "autocmd FileType * let b:coc_suggest_disable = 1
 nmap <leader>f  <Plug>(coc-format-selected)
