@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
     Plug 'mhinz/vim-signify'
     Plug 'jwalton512/vim-blade'
+    Plug 'higuri/tscwatch.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'

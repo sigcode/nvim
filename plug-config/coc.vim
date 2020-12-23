@@ -2,7 +2,7 @@
  
 
 nmap <space>e :CocCommand explorer<CR>
-nmap <space>t :CocCommand coc-terminal-toggle<CR>
+nmap <space>t :terminal.Toggle <CR>
 nmap <space>r :RG <CR>
 nmap <space>p :Files <CR>
 nmap <space>f :BLines <CR>

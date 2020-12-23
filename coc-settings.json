@@ -10,7 +10,7 @@
     "v": "open:vsplit",
     "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"]
   },
-  "coc.preferences.formatOnSaveFiletypes": ["css", "html", "php"],
+  "coc.preferences.formatOnSaveFiletypes": ["css", "html", "php", "ts", "js"],
   "suggest.completionItemKindLabels": {
     "text": "t",
     "method": "m",
