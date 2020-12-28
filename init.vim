@@ -68,6 +68,7 @@ inoremap <expr> <c-j> ("\<C-n>")
 let g:rooter_manual_only = 1
 let g:rooter_patterns = ['^core']
 inoremap <expr> <c-k> ("\<C-p>")
+tnoremap <Esc> <C-\><C-n>
 let g:gutentags_project_root = ['Makefile']
 nmap <Tab>1 :bfirst<CR>
 nmap <Tab>2 :bfirst<CR>:bn<CR>
@@ -79,3 +80,8 @@ nmap <S-Up> :-10
 nmap <S-Down> :+10
 nmap <S-j> :+10<CR>
 nmap <S-k> :-10<CR>
+
+au VimEnter * split
+au VimEnter * resize -22
+au VimEnter * term
+au VimEnter * wincmd k
