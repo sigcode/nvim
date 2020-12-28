@@ -2,7 +2,9 @@
  
 
 nmap <space>e :CocCommand explorer<CR>
-nmap <space>t :terminal.Toggle <CR>
+nmap <space>t :split <CR> :term <CR>
+
+nmap <space>z :wincmd q <CR>
 nmap <space>r :RG <CR>
 nmap <space>p :Files <CR>
 nmap <space>f :BLines <CR>

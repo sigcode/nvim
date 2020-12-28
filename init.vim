@@ -81,7 +81,7 @@ nmap <S-Down> :+10
 nmap <S-j> :+10<CR>
 nmap <S-k> :-10<CR>
 
-au VimEnter * split
-au VimEnter * resize -22
-au VimEnter * term
-au VimEnter * wincmd k
+"au VimEnter * split
+"au VimEnter * resize -22
+"au VimEnter * term
+"au VimEnter * wincmd k
