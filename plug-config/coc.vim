@@ -4,6 +4,9 @@
 nmap <space>e :CocCommand explorer<CR>
 nmap <space>t :split <CR> :term <CR>
 
+tnoremap <space>t :wincmd q <CR>
+tnoremap ii  <C-\><C-n>
+ 
 nmap <space>z :wincmd q <CR>
 nmap <space>r :RG <CR>
 nmap <space>p :Files <CR>
