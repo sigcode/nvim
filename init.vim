@@ -41,10 +41,11 @@ let g:indentLine_color_tty_light = 7 " (default: 4)
 let g:indentLine_color_dark = 1 " (default: 2)
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 set cursorline                          " Enable highlighting of the current line
-set background=dark                     " tell vim what the background color looks like
+let g:webdevicons_enable_startify = 1
+set background=dark                     " tell vim what the background color looks like>
+  set guifont=DroidSansMono\ Nerd\ Font\ 11
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don'"t need to see things like -- INSERT -- anymore
-set guifont=DejaVu\ Sans\ Mono:h13
 set noswapfile
 set nobackup                            " This is recommended by coc
 set undodir=~/.config/nvim/undodir
@@ -58,7 +59,7 @@ filetype indent on
 set filetype=html
 set filetype=blade.php
 "set autochdir                           " Your working directory will always
-
+let g:webdevicons_enable = 1
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
 
 colorscheme gruvbox

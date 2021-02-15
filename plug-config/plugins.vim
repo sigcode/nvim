@@ -44,4 +44,5 @@ Plug 'nightsense/carbonized'
     Plug 'vim-airline/vim-airline'
  ""   Plug 'shawncplus/phpcomplete.vim'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'ryanoasis/vim-devicons'
 call plug#end()
