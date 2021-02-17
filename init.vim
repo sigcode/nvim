@@ -35,6 +35,9 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set number                              " Line numbers
+set textwidth=120 
+
+set colorcolumn=120
 "let g:indentLine_setColors = 0
 let g:indentLine_color_term = 239
 let g:indentLine_color_tty_light = 7 " (default: 4)
