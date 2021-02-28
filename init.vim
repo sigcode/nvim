@@ -63,7 +63,7 @@ set filetype=html
 set filetype=blade.php
 "set autochdir                           " Your working directory will always
 let g:webdevicons_enable = 1
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
+au! BufWritePost "/home/www-data/.config/nvim/init.vim" source %      " auto source when writing to init.vm
 
 colorscheme gruvbox
 imap ii <ESC>
@@ -88,7 +88,22 @@ nmap <S-Up> :-10
 nmap <S-Down> :+10
 nmap <S-j> :+10<CR>
 nmap <S-k> :-10<CR>
+" Make Ranger replace netrw and be the file explorer
+let g:rnvimr_ex_enable = 1
+"
+let g:floaterm_keymap_toggle = '<space>t'
+let g:floaterm_keymap_next   = '<F2>'
+let g:floaterm_keymap_prev   = '<F3>'
+let g:floaterm_keymap_new    = '<F4>'
 
+" Floaterm
+let g:floaterm_gitcommit='floaterm'
+let g:floaterm_autoinsert=1
+let g:floaterm_width=0.9
+let g:floaterm_height=0.9
+let g:floaterm_wintitle=0
+let g:floaterm_autoclose=1
+nmap <space>w :RnvimrToggle<CR>
 "au VimEnter * split
 "au VimEnter * resize -22
 "au VimEnter * term

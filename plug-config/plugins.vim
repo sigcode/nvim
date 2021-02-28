@@ -12,7 +12,9 @@ call plug#begin('~/.vim/plugged')
 " " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'godlygeek/tabular'
 Plug 'yggdroot/indentline'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'tpope/vim-surround'
+Plug 'voldikss/vim-floaterm'
     Plug 'junegunn/vim-easy-align'
     Plug 'mhinz/vim-signify'
     Plug 'jwalton512/vim-blade'
