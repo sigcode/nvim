@@ -63,7 +63,7 @@ set filetype=html
 set filetype=blade.php
 "set autochdir                           " Your working directory will always
 let g:webdevicons_enable = 1
-au! BufWritePost "/home/www-data/.config/nvim/init.vim" source %      " auto source when writing to init.vm
+au! BufWritePost @% source %      " auto source when writing to init.vm
 
 colorscheme gruvbox
 imap ii <ESC>
