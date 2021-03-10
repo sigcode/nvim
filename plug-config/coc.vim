@@ -1,7 +1,7 @@
 
  
 
-nmap <space>e :CocCommand explorer<CR>
+nmap <Tab>e :CocCommand explorer<CR>
 "nmap <space>t :split <CR> :term <CR>
 
 "tnoremap <space>t :wincmd q <CR>
@@ -9,11 +9,11 @@ nmap <space>e :CocCommand explorer<CR>
 tnoremap ii  <C-\><C-n>
  
 "nmap <space>z :wincmd q <CR>
-nmap <space>r :RG <CR>
-nmap <space>p :Files <CR>
-nmap <space>f :BLines <CR>
+nmap <Tab>r :RG <CR>
+nmap <Tab>p :Files <CR>
+nmap <Tab>f :BLines <CR>
 
-nmap <space>x :bd <CR>
+nmap <Tab>x :bd <CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 set hidden
 set nobackup

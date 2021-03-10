@@ -1,5 +1,4 @@
 
-let g:mapleader = "space"
 syntax on
 
 source $HOME/.config/nvim/plug-config/plugins.vim
@@ -64,8 +63,9 @@ set filetype=blade.php
 "set autochdir                           " Your working directory will always
 let g:webdevicons_enable = 1
 au! BufWritePost @% source %      " auto source when writing to init.vm
-
+let ayucolor="mirage"
 colorscheme gruvbox
+"colorscheme ayu
 imap ii <ESC>
 "autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 vmap <leader>f  <Plug>(coc-format-selected)
@@ -86,12 +86,14 @@ nmap <S-Tab> :bnext<CR>
 let g:NERDCreateDefaultMappings = 1
 nmap <S-Up> :-10
 nmap <S-Down> :+10
-nmap <S-j> :+10<CR>
-nmap <S-k> :-10<CR>
+nmap <S-j> :+15<CR>
+nmap <S-k> :-15<CR>
+let g:workspace_session_directory = $HOME . '/.config/sessions/'
+let g:workspace_session_disable_on_args = 1
 " Make Ranger replace netrw and be the file explorer
 let g:rnvimr_ex_enable = 1
 "
-let g:floaterm_keymap_toggle = '<space>t'
+let g:floaterm_keymap_toggle = '<Tab>t'
 let g:floaterm_keymap_next   = '<F2>'
 let g:floaterm_keymap_prev   = '<F3>'
 let g:floaterm_keymap_new    = '<F4>'
@@ -103,7 +105,7 @@ let g:floaterm_width=0.9
 let g:floaterm_height=0.9
 let g:floaterm_wintitle=0
 let g:floaterm_autoclose=1
-nmap <space>w :RnvimrToggle<CR>
+nmap <Tab>w :RnvimrToggle<CR>
 "au VimEnter * split
 "au VimEnter * resize -22
 "au VimEnter * term

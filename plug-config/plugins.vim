@@ -15,9 +15,13 @@ Plug 'yggdroot/indentline'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'tpope/vim-surround'
 Plug 'voldikss/vim-floaterm'
+Plug 'jacoborus/tender.vim'
     Plug 'junegunn/vim-easy-align'
+    Plug 'thaerkh/vim-workspace'
     Plug 'mhinz/vim-signify'
+    Plug 'glepnir/oceanic-material'
     Plug 'jwalton512/vim-blade'
+    Plug 'ayu-theme/ayu-vim'
     Plug 'higuri/tscwatch.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -34,6 +38,7 @@ Plug 'nightsense/carbonized'
     Plug 'ludovicchabant/vim-gutentags'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'morhetz/gruvbox'
+    Plug 'kyoz/purify', { 'rtp': 'vim' }
 "   Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 "    Plug 'liuchengxu/vim-which-key'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
