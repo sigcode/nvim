@@ -52,7 +52,13 @@ return {
 			opts.presets.lsp_doc_border = true
 		end,
 	},
-
+	{
+		"nvim-tree/nvim-tree.lua",
+		lazy = true,
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+	},
 	{
 		"rcarriga/nvim-notify",
 		opts = {
@@ -61,15 +67,15 @@ return {
 	},
 
 	-- animations
-	{
-		"echasnovski/mini.animate",
-		event = "VeryLazy",
-		opts = function(_, opts)
-			opts.scroll = {
-				enable = false,
-			}
-		end,
-	},
+	-- {
+	-- 	"echasnovski/mini.animate",
+	-- 	event = "VeryLazy",
+	-- 	opts = function(_, opts)
+	-- 		opts.scroll = {
+	-- 			enable = false,
+	-- 		}
+	-- 	end,
+	-- },
 
 	-- buffer line
 	-- {
