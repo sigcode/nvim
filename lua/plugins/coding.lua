@@ -39,6 +39,13 @@ return {
 		opts = {},
 	},
 
+	{
+		"terrortylor/nvim-comment",
+		keys = {
+			{ "gc", "<Plug>Commentary", desc = "Comment" },
+		},
+	},
+
 	-- Go forward/backward with square brackets
 	{
 		"echasnovski/mini.bracketed",

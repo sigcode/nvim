@@ -1,7 +1,3 @@
-local discipline = require("craftzdog.discipline")
-
-discipline.cowboy()
-
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
@@ -10,7 +6,7 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "<Leader>w", ":w<CR>", opts)
 keymap.set("n", "<Leader>c", "<CMD>buffer_delete<CR>", opts)
 keymap.set("n", "<Leader>F", "<CMD>:Rg<CR>", opts)
-keymap.set("v", "<Leader>/", "<CR>gc", opts)
+keymap.set("v", "<Leader>/", "<PLUG>Comment", opts)
 
 -- Increment/decrement
 keymap.set("n", "+", "<C-a>")
@@ -55,11 +51,3 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 keymap.set("n", "<C-j>", function()
 	vim.diagnostic.goto_next()
 end, opts)
-
-keymap.set("n", "<leader>r", function()
-	require("craftzdog.hsl").replaceHexWithHSL()
-end)
-
-keymap.set("n", "<leader>i", function()
-	require("craftzdog.lsp").toggleInlayHints()
-end)
