@@ -4,9 +4,10 @@ local opts = { noremap = true, silent = true }
 -- Do things without affecting the registers
 keymap.set("n", "x", '"_x')
 keymap.set("n", "<Leader>w", ":w<CR>", opts)
-keymap.set("n", "<Leader>c", "<CMD>buffer_delete<CR>", opts)
+keymap.set("n", "<Leader>c", "<CMD>bdelete! <CR>", opts)
 keymap.set("n", "<Leader>F", "<CMD>:Rg<CR>", opts)
 keymap.set("v", "<Leader>/", "<PLUG>Comment", opts)
+keymap.set("n", "<Leader>e", "<CMD>NvimTreeToggle<CR>", opts)
 
 -- Increment/decrement
 keymap.set("n", "+", "<C-a>")

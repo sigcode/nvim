@@ -69,6 +69,7 @@ require("lazy").setup({
 				-- "matchparen",
 				"netrwPlugin",
 				"rplugin",
+				"neotree",
 				"tarPlugin",
 				"tohtml",
 				"tutor",
@@ -84,4 +85,28 @@ require("lazy").setup({
 		},
 	},
 	debug = false,
+})
+
+require("bufferline").setup({
+	options = {
+		offsets = {
+			{
+				filetype = "NvimTree",
+				text = "Nvim Tree",
+				separator = true,
+				text_align = "left",
+			},
+		},
+		modified_icon = "●",
+		show_close_icon = true,
+		show_buffer_close_icons = true,
+		separator_style = "slant",
+		color_indicator = true,
+		diagnostics = "nvim_lsp",
+		hover = {
+			enabled = true,
+			delay = 200,
+			reveal = { "close" },
+		},
+	},
 })

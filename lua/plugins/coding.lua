@@ -46,6 +46,8 @@ return {
 		},
 	},
 
+	{ "nvim-tree/nvim-tree.lua" },
+	{ "nvim-tree/nvim-web-devicons" },
 	-- Go forward/backward with square brackets
 	{
 		"echasnovski/mini.bracketed",

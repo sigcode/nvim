@@ -54,10 +54,32 @@ return {
 	},
 	{
 		"nvim-tree/nvim-tree.lua",
-		lazy = true,
+		lazy = false,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
+		config = function()
+			require("nvim-tree").setup({
+				update_cwd = true,
+				sort = {
+					sorter = "case_sensitive",
+				},
+				view = {
+					width = 30,
+				},
+				renderer = {
+					group_empty = true,
+				},
+				git = {
+					ignore = false,
+					enable = true,
+					timeout = 500,
+				},
+				update_focused_file = {
+					enable = true,
+				},
+			})
+		end,
 	},
 	{
 		"rcarriga/nvim-notify",
