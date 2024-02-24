@@ -81,6 +81,10 @@ return {
 			})
 		end,
 	},
+
+	{
+		"onsails/lspkind-nvim",
+	},
 	{
 		"rcarriga/nvim-notify",
 		opts = {
