@@ -108,7 +108,7 @@ require("bufferline").setup({
 			delay = 200,
 			reveal = { "close" },
 		},
-	}
+	},
 })
 local cmp = require("cmp")
 local lspkind = require("lspkind")
