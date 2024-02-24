@@ -111,15 +111,9 @@ require("bufferline").setup({
 	},
 })
 local cmp = require("cmp")
-local lspkind = require("lspkind")
 
 cmp.setup({
 
-	formatting = {
-		format = lspkind.cmp_format({
-			with_text = true,
-		}),
-	},
 	mapping = {
 		["<C-d>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
