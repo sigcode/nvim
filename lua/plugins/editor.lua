@@ -41,7 +41,7 @@ return {
 			},
 		},
 	},
-
+	{ "terrortylor/nvim-comment" },
 	{
 		"telescope.nvim",
 		dependencies = {
