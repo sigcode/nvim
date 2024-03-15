@@ -31,12 +31,12 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.lang.typescript" },
 		{ import = "lazyvim.plugins.extras.lang.json" },
 		-- { import = "lazyvim.plugins.extras.lang.markdown" },
-		{ import = "lazyvim.plugins.extras.lang.rust" },
+		--		{ import = "lazyvim.plugins.extras.lang.rust" },
 		{ import = "lazyvim.plugins.extras.lang.tailwind" },
 		{ import = "lazyvim.plugins.extras.coding.copilot" },
 		-- { import = "lazyvim.plugins.extras.dap.core" },
 		-- { import = "lazyvim.plugins.extras.vscode" },
-		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+		--{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 		-- { import = "lazyvim.plugins.extras.test.core" },
 		-- { import = "lazyvim.plugins.extras.coding.yanky" },
 		-- { import = "lazyvim.plugins.extras.editor.mini-files" },
@@ -119,10 +119,6 @@ cmp.setup({
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(),
 		["<C-e>"] = cmp.mapping.close(),
-		["<CR>"] = cmp.mapping.confirm({
-			behavior = cmp.ConfirmBehavior.Insert,
-			select = true,
-		}),
 	},
 })
 
