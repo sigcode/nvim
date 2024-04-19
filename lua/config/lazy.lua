@@ -139,3 +139,12 @@ require("obsidian").setup({
 		},
 	},
 })
+
+local codeium = require("codeium")
+codeium.setup({
+	config = function()
+		vim.keymap.set("i", "<C-x>", function()
+			return vim.fn["codeium#Complete()"]()
+		end, { expr = true })
+	end,
+})
