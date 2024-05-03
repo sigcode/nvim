@@ -122,7 +122,6 @@ cmp.setup({
 	},
 })
 
-require("nvim_comment").setup()
 require("obsidian").setup({
 	workspaces = {
 		{

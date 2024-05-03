@@ -20,21 +20,6 @@ return {
 	},
 
 	{ "nvim-tree/nvim-web-devicons" },
-	-- Go forward/backward with square brackets
-	{
-		"echasnovski/mini.bracketed",
-		event = "BufReadPost",
-		config = function()
-			local bracketed = require("mini.bracketed")
-			bracketed.setup({
-				file = { suffix = "" },
-				window = { suffix = "" },
-				quickfix = { suffix = "" },
-				yank = { suffix = "" },
-				treesitter = { suffix = "n" },
-			})
-		end,
-	},
 
 	{
 		"epwalsh/obsidian.nvim",
@@ -68,12 +53,5 @@ return {
 
 			-- see below for full list of options 👇
 		},
-	},
-	{
-		"nvim-cmp",
-		dependencies = { "hrsh7th/cmp-emoji" },
-		opts = function(_, opts)
-			table.insert(opts.sources, { name = "emoji" })
-		end,
 	},
 }

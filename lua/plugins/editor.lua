@@ -1,12 +1,5 @@
 return {
 
-	{
-		"lewis6991/gitsigns.nvim",
-		config = function()
-			require("gitsigns").setup()
-		end,
-	},
-
 	{ "junegunn/fzf" },
 	{ "junegunn/fzf.vim" },
 	{
@@ -21,7 +14,6 @@ return {
 			},
 		},
 	},
-	{ "terrortylor/nvim-comment" },
 	{
 		"telescope.nvim",
 		dependencies = {
