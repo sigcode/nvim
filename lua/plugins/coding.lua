@@ -3,7 +3,13 @@ return {
 		"jackMort/ChatGPT.nvim",
 		event = "VeryLazy",
 		config = function()
-			require("chatgpt").setup()
+			require("chatgpt").setup({
+				-- this config assumes you have OPENAI_API_KEY environment variable set
+				openai_params = {
+					-- NOTE: model
+					model = "gpt-4o",
+				},
+			})
 		end,
 		dependencies = {
 			"MunifTanjim/nui.nvim",
