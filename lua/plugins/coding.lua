@@ -24,7 +24,10 @@ return {
 			{ "gc", "<Plug>Commentary", desc = "Comment" },
 		},
 	},
-
+	{
+		"tpope/vim-fugitive",
+		lazy = false, -- if you want it to be loaded at startup
+	},
 	{ "nvim-tree/nvim-web-devicons" },
 
 	{

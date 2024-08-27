@@ -113,14 +113,30 @@ require("bufferline").setup({
 local cmp = require("cmp")
 
 cmp.setup({
-
 	mapping = {
 		["<C-d>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(),
 		["<C-e>"] = cmp.mapping.close(),
 	},
+	sources = {
+		{ name = "chatgpt" },
+		{ name = "nvim_lsp" },
+		{ name = "tabnine" },
+	},
 })
+local nvim_lsp = require("lspconfig")
+
+local on_attach = function(client, bufnr)
+	local buf_set_keymap = vim.api.nvim_buf_set_keymap
+	local opts = { noremap = true, silent = true }
+
+	-- Mappings.
+	buf_set_keymap(bufnr, "n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
+	-- Other mappings...
+end
+
+local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 require("obsidian").setup({
 	workspaces = {
@@ -138,3 +154,19 @@ require("obsidian").setup({
 		},
 	},
 })
+
+local wk = require("which-key")
+
+-- Define your mappings
+
+local mappings = {
+	C = {
+		name = "ChatGPT", -- Group name for ChatGPT mappings
+		c = { "<cmd>ChatGPT<CR>", "Open ChatGPT" }, -- Open ChatGPT command
+		g = { "<cmd>ChatGPTCompleteCode<CR>" }, -- Complete code command
+		a = { "<cmd>ChatGPTActAs<CR>", "Act As" }, -- Act as command
+		d = { "<cmd>ChatGPTRun docstring<CR>", "Create Docblock" }, -- Create docblock command
+	},
+}
+-- Register the mappings
+wk.register(mappings, { prefix = "<leader>" })

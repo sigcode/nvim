@@ -4,7 +4,7 @@ local opts = { noremap = true, silent = true }
 -- Do things without affecting the registers
 keymap.set("n", "x", '"_x')
 keymap.set("n", "<Leader>w", ":w<CR>", opts)
-keymap.set("n", "<Leader>c", "<CMD>bdelete! <CR>", opts)
+keymap.set("i", "<C-c>", "<CMD>ChatGPTCompleteCode<CR>", opts)
 keymap.set("n", "<Leader>F", "<CMD>Telescope fd<CR>", opts)
 keymap.set("v", "<Leader>/", "<CMD>:'<,'>CommentToggle<CR>", opts)
 keymap.set("v", "/", "<CMD>:'<,'>CommentToggle<CR>", opts)
