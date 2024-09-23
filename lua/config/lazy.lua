@@ -117,12 +117,18 @@ cmp.setup({
 		["<C-d>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(),
+		["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+		["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
 		["<C-e>"] = cmp.mapping.close(),
 	},
 	sources = {
 		{ name = "chatgpt" },
 		{ name = "nvim_lsp" },
 		{ name = "tabnine" },
+		{ name = "buffer" },
+		{ name = "path" },
+		{ name = "treesitter" },
+		{ name = "git" },
 	},
 })
 local nvim_lsp = require("lspconfig")
@@ -154,19 +160,3 @@ require("obsidian").setup({
 		},
 	},
 })
-
-local wk = require("which-key")
-
--- Define your mappings
-
-local mappings = {
-	C = {
-		name = "ChatGPT", -- Group name for ChatGPT mappings
-		c = { "<cmd>ChatGPT<CR>", "Open ChatGPT" }, -- Open ChatGPT command
-		g = { "<cmd>ChatGPTCompleteCode<CR>" }, -- Complete code command
-		a = { "<cmd>ChatGPTActAs<CR>", "Act As" }, -- Act as command
-		d = { "<cmd>ChatGPTRun docstring<CR>", "Create Docblock" }, -- Create docblock command
-	},
-}
--- Register the mappings
-wk.register(mappings, { prefix = "<leader>" })
