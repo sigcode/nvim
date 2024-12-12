@@ -1,9 +1,11 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.ui.mini-animate"
+    "lazyvim.plugins.extras.ai.codeium",
+    "lazyvim.plugins.extras.ui.mini-animate",
+    "lazyvim.plugins.extras.util.dot"
   ],
   "news": {
-    "NEWS.md": "7107",
+    "NEWS.md": "7429",
     "doc/news.txt": "13086"
   },
   "version": 7

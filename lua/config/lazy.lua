@@ -110,27 +110,27 @@ require("bufferline").setup({
 		},
 	},
 })
-local cmp = require("cmp")
-
-cmp.setup({
-	mapping = {
-		["<C-d>"] = cmp.mapping.scroll_docs(-4),
-		["<C-f>"] = cmp.mapping.scroll_docs(4),
-		["<C-Space>"] = cmp.mapping.complete(),
-		["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
-		["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
-		["<C-e>"] = cmp.mapping.close(),
-	},
-	sources = {
-		{ name = "chatgpt" },
-		{ name = "nvim_lsp" },
-		{ name = "tabnine" },
-		{ name = "buffer" },
-		{ name = "path" },
-		{ name = "treesitter" },
-		{ name = "git" },
-	},
-})
+-- local cmp = require("cmp")
+--
+-- cmp.setup({
+-- 	mapping = {
+-- 		["<C-d>"] = cmp.mapping.scroll_docs(-4),
+-- 		["<C-f>"] = cmp.mapping.scroll_docs(4),
+-- 		["<C-Space>"] = cmp.mapping.complete(),
+-- 		["<Tab>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+-- 		["<S-Tab>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+-- 		["<C-e>"] = cmp.mapping.close(),
+-- 	},
+-- 	sources = {
+-- 		{ name = "chatgpt" },
+-- 		{ name = "nvim_lsp" },
+-- 		{ name = "tabnine" },
+-- 		{ name = "buffer" },
+-- 		{ name = "path" },
+-- 		{ name = "treesitter" },
+-- 		{ name = "git" },
+-- 	},
+-- })
 local nvim_lsp = require("lspconfig")
 
 local on_attach = function(client, bufnr)
@@ -141,8 +141,6 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap(bufnr, "n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
 	-- Other mappings...
 end
-
-local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 require("obsidian").setup({
 	workspaces = {
