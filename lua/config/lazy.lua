@@ -158,3 +158,13 @@ require("obsidian").setup({
 		},
 	},
 })
+
+require("lspconfig").typos_lsp.setup({
+	filetypes = { "rust", "python" },
+	init_options = {
+		-- Set German as the primary language
+		config = {
+			locale = "de",
+		},
+	},
+})
