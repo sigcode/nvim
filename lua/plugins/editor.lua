@@ -35,48 +35,4 @@ return {
 			})
 		end,
 	},
-	{
-		"saghen/blink.cmp",
-		version = "0.*",
-		dependencies = {
-			"L3MON4D3/LuaSnip",
-			"saadparwaiz1/cmp_luasnip",
-			-- lock compat to tagged versions, if you've also locked blink.cmp to tagged versions
-			{ "saghen/blink.compat", version = "*", opts = { impersonate_nvim_cmp = true } },
-			"roobert/tailwindcss-colorizer-cmp.nvim",
-		},
-		config = function()
-			local blink = require("blink.cmp")
-			local tailwind_formatter = require("tailwindcss-colorizer-cmp").formatter
-
-			blink.setup({
-				mapping = {
-					["<CR>"] = {
-						accept = {
-							expand_snippet = function(snippet)
-								require("luasnip").lsp_expand(snippet)
-							end,
-						},
-					},
-				},
-				completion = {
-					sources = {
-						{ name = "nvim_lsp" },
-						{ name = "luasnip" },
-						{
-							name = "buffer",
-							option = {
-								get_bufnrs = function()
-									return vim.api.nvim_list_bufs()
-								end,
-							},
-						},
-					},
-					formatting = {
-						format = tailwind_formatter,
-					},
-				},
-			})
-		end,
-	},
 }
